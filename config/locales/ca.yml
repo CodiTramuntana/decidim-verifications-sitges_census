@@ -1,0 +1,30 @@
+ca:
+  activemodel:
+    attributes:
+      authorization_handler:
+        birthdate: Data de naixement
+        document_number: Document d'identitat
+  decidim:
+    authorization_handlers:
+      sitges_census_authorization_handler:
+        explanation: Verifica't com ciutadà de Sitges
+        name: Ciutadà de Sitges
+    verifications:
+      authorizations:
+        new:
+          authorize_with: Verifica't com %{authorizer}
+  errors:
+    messages:
+      sitges_census_authorization_handler:
+        birthdate_not_valid:
+        cannot_validate: El cens de Sitges no pot validar les seves dades. No es compleixen les condicions addicionals per verificar-se
+        connection_failed: "No es possible connectar amb el cens de Sitges. Si us plau, intenti-ho més tard."
+        connection_timeout: "El cens de Sitges no está responent a la verificació. Siusplau, intenti-ho més tard."
+        document_number_not_valid: El document d'identitat no ès vàlid
+        document_number_and_birthdate_dont_correspond: La data de naixement no corresponen amb el document d'identitat.
+        duplicate_authorization: Aquestes dades ja s'estan utilitzant
+        incorrect_document_number: Document d'identitat incorrecte
+        operation_not_valid: Les seves dades no corresponen amb el cens.
+        too_young: Heu de tenir almenys 16 anys
+        unexpected_error: Alguna cosa ha anat malament. Si us plau, intenti-ho més tard.
+        webservice_access_permit: Accés al servei web permés
