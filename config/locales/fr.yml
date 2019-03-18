@@ -1,3 +1,4 @@
+---
 fr:
   activemodel:
     attributes:
@@ -16,12 +17,16 @@ fr:
   errors:
     messages:
       sitges_census_authorization_handler:
-        birthdate_not_valid:
-        cannot_validate: Le recensement de Sitges ne peut pas valider vos données. Les conditions supplémentaires à vérifier ne sont pas remplies
-        connection_failed: "Il n'est pas possible de se connecter au recensement de Sitges. Veuillez réessayer plus tard."
-        connection_timeout: "Le recensement de Sitges ne répond pas à la vérification. Veuillez réessayer plus tard."
+        birthdate_not_valid: La date de naissance est invalide
+        cannot_validate: Le recensement de Sitges ne peut pas valider vos données.
+          Les conditions supplémentaires à vérifier ne sont pas remplies
+        connection_failed: Il n'est pas possible de se connecter au recensement de
+          Sitges. Veuillez réessayer plus tard.
+        connection_timeout: Le recensement de Sitges ne répond pas à la vérification.
+          Veuillez réessayer plus tard.
+        document_number_and_birthdate_dont_correspond: La date de naissance ne correspond
+          pas à la pièce d'identité.
         document_number_not_valid: La pièce d'identité n'est pas valide
-        document_number_and_birthdate_dont_correspond: La date de naissance ne correspond pas à la pièce d'identité.
         duplicate_authorization: Ces données sont déjà utilisées
         incorrect_document_number: Document d'identité incorrect
         operation_not_valid: Vos données ne correspondent pas au recensement.
