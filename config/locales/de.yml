@@ -1,0 +1,36 @@
+---
+de:
+  activemodel:
+    attributes:
+      authorization_handler:
+        birthdate: Geburtsdatum
+        document_number: Ausweisdokument
+  decidim:
+    authorization_handlers:
+      sitges_census_authorization_handler:
+        explanation: Überprüfe dich selbst als Bürger von Sitges
+        name: Bürger von Sitges
+    verifications:
+      authorizations:
+        new:
+          authorize_with: Prüfen Sie selbst wie %{authorizer}
+  errors:
+    messages:
+      sitges_census_authorization_handler:
+        birthdate_not_valid: Das Geburtsdatum ist ungültig
+        cannot_validate: Die Volkszählung von Sitges kann Ihre Daten nicht validieren.
+          Die zusätzlichen zu überprüfenden Bedingungen sind nicht erfüllt
+        connection_failed: Es ist nicht möglich, sich mit der Volkszählung von Sitges
+          in Verbindung zu setzen. Bitte versuchen Sie es später erneut.
+        connection_timeout: Die Volkszählung von Sitges reagiert nicht auf die Überprüfung.
+          Bitte versuchen Sie es später erneut.
+        document_number_and_birthdate_dont_correspond: Das Geburtsdatum entspricht
+          nicht dem Ausweis.
+        document_number_not_valid: Das Ausweisdokument ist ungültig
+        duplicate_authorization: Diese Daten werden bereits verwendet
+        incorrect_document_number: Falsches Ausweisdokument
+        operation_not_valid: Ihre Daten entsprechen nicht der Volkszählung.
+        too_young: Sie müssen mindestens 16 Jahre alt sein
+        unexpected_error: Etwas ist schief gelaufen. Bitte versuchen Sie es später
+          erneut.
+        webservice_access_permit: Zugriff auf den Webservice erlaubt

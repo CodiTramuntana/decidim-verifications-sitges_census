@@ -1,0 +1,35 @@
+---
+en:
+  activemodel:
+    attributes:
+      authorization_handler:
+        birthdate: Birthdate
+        document_number: Document number
+  decidim:
+    authorization_handlers:
+      sitges_census_authorization_handler:
+        explanation: Check yourself as a citizen of Sitges
+        name: Citizen of Sitges
+    verifications:
+      authorizations:
+        new:
+          authorize_with: Check yourself as %{authorizer}
+  errors:
+    messages:
+      sitges_census_authorization_handler:
+        birthdate_not_valid: The birthdate is not valid
+        cannot_validate: The census of Sitges can not validate your data. The additional
+          conditions to be verified are not met.
+        connection_failed: It is not possible to connect with the Sitges census. Please
+          try again later.
+        connection_timeout: The census of Sitges is not responding to the verification.
+          Please try again later.
+        document_number_and_birthdate_dont_correspond: The date of birth does not
+          correspond to the identity document.
+        document_number_not_valid: The document number is not valid
+        duplicate_authorization: These data are being used
+        incorrect_document_number: Incorrect document number
+        operation_not_valid: Your data does not correspond to the census.
+        too_young: You must be at least 16 years old
+        unexpected_error: Something went wrong. Please try again later.
+        webservice_access_permit: Access to the web service allowed
