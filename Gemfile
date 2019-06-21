@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 
 gemspec
 
-DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.16-stable' }
+DECIDIM_VERSION = ">= 0.17.1"
 gem 'decidim', DECIDIM_VERSION
 
 group :development, :test do
