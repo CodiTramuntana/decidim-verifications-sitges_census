@@ -18,10 +18,10 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,lib}/**/*', 'LICENSE-AGPLv3.txt', 'Rakefile', 'README.md']
 
-  s.add_dependency 'decidim-core', ">= #{Decidim::Verifications::SitgesCensus.decidim_version}"
+  s.add_dependency 'decidim-core', "<= #{Decidim::Verifications::SitgesCensus.decidim_version}"
   s.add_dependency 'decidim-verifications', ">= #{Decidim::Verifications::SitgesCensus.decidim_version}"
   s.add_dependency 'rails', '>= 5.2'
   s.add_dependency 'virtus-multiparams'
 
-  s.add_development_dependency 'decidim-dev', ">= #{Decidim::Verifications::SitgesCensus.decidim_version}"
+  s.add_development_dependency 'decidim-dev', "<= #{Decidim::Verifications::SitgesCensus.decidim_version}"
 end
